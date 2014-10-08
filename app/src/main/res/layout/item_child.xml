@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textBSSID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="BSSID"
+        />
+
+    <View
+        android:id="@+id/childLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@id/textBSSID"/>
+
+    <TextView
+        android:id="@+id/textLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_below="@+id/textBSSID"
+        android:text="Level"/>
+
+    <View
+        android:id="@+id/childLine2"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@id/textLevel"/>
+
+    <TextView
+        android:id="@+id/textCapabilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_below="@+id/textLevel"
+        android:text="Capabilities"/>
+
+    <View
+        android:id="@+id/childLine3"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@id/textLevel"/>
+
+</RelativeLayout>

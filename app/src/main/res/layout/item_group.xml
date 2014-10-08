@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18dp"
+        android:text="    "/>
+
+    <ImageView
+        android:id="@+id/imageWifiSignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textSpace"
+        android:src="@drawable/wifi_1"
+        />
+
+    <TextView
+        android:id="@+id/textSSID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageWifiSignal"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@id/imageWifiSignal"
+        android:textSize="18dp"
+        android:text="SSID"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/button_Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageWifiSignal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/button_connect"
+        android:visibility="invisible"
+        android:focusable="false"/>
+
+    <ImageView
+        android:id="@+id/imageLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageWifiSignal"
+        android:layout_toLeftOf="@id/button_Connect"
+        android:layout_toStartOf="@id/button_Connect"/>
+
+    <TextView
+        android:id="@+id/textIsConnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageWifiSignal"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/text_connected"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyWiFi</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_wifi">Wi-Fi 状态</string>
+    <string name="button_connect">连接</string>
+    <string name="text_connected">已连接</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="no_wifi">No Wi-Fi Available</string>
+</resources>
